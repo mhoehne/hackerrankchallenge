@@ -26,10 +26,10 @@ function readLine() {
  * Complete the simpleArraySum function below.
  */
 function simpleArraySum(ar) {
-  let total = 0
-    for (var i = 0; i < ar.length; i++) {
-      total = total + ar[i];
-    }
+  let total = 0;
+for (value of ar) {
+  total += value;
+}
 return total;
 }
 
