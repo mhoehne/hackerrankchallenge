@@ -38,15 +38,15 @@ return total;
 }
 
 function main() {
-    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+  const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
-    const arCount = parseInt(readLine(), 10);
+  const arCount = parseInt(readLine(), 10);
 
-    const ar = readLine().split(' ').map(arTemp => parseInt(arTemp, 10));
+  const ar = readLine().split(' ').map(arTemp => parseInt(arTemp, 10));
 
-    let result = simpleArraySum(ar);
+  let result = simpleArraySum(ar);
 
-    ws.write(result + "\n");
+  ws.write(result + "\n");
 
-    ws.end();
+  ws.end();
 }
